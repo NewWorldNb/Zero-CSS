@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--实际开发中比较美观的字体
+    中文：微软雅黑，苹方
+    英文：Times New Roman、Aria、和Verdana
+-->
+<html>
+    <head>
+        <!--类选择器-->
+        <!--后代选择器-->
+        <!--id选择器-->
+        <!--群组选择器-->
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            div{color:red;font-weight: bold;font-size: 20px;font-family: 微软雅黑;}         <!--元素选择器-->
+            .h1c{color:green;}      
+            div p{color: cadetblue;}
+            #id1{color:chocolate;}
+            div,span{color: coral;} 
+            #css46{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: blue;
+                text-indent: 28px;
+            }
+            .discount{color:red}
+            .srcPrice{text-decoration: line-through;}
+        </style>
+    </head>
+    <body>
+        <div>块
+            <p>
+                DIV内部
+            </p>
+            <span>span1</span>
+            <span>span2</span>
+        </div>
+        <h1 class = "h1c">标题1</h1>
+        <h2 class = "h1c">标题2</h2>
+        <p id ="id1">段落1</p>
+        <p>段落2</p>
+        <p id="css46">有规划的人生叫蓝图，没规划的人生叫拼图。</p>
+        <div>
+            <p class = "discount">184元</p>
+            <p class = "srcPrice">184元</p>
+        </div>   
+    </body>
+</html>
