@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+    正常文档流就是HTML页面中的块元素和行元素正常排列后的执行顺序
+    但是通过设置浮动和定位可以改变文档流的顺序
+    浮动是CSS布局的最佳利器，我们可以通过浮动来灵活地定位页面元素
+    clear:both;清除所有浮动
+-->
+<httml>
+    <head>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            .father{
+                width:820px;
+                height:620px;
+            }
+            #divId1{
+                width:800px;
+                height:100px;
+                margin:10px 10px 5px 10px;
+                background-color:rgb(117, 194, 218);
+            }
+            #divId2{
+                width:595px;
+                height:380px;
+                margin:5px 5px 5px 10px;
+                background-color: pink;
+                float:left;
+            }
+            #divId3{
+                width:195px;
+                height:380px;
+                margin:5px 10px 10px 5px;
+                background-color: pink;
+                float:left;
+            }
+            #divNULL{
+                clear: both;
+            }
+            #divId4{
+                width:800px;
+                height:100px;
+                margin:5px 10px 10px 10px;
+                background-color: rgb(117, 194, 218);
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "father">
+            <div id = "divId1">1</div>
+            <div id = "divId2">2</div>
+            <div id = "divId3">3</div>
+            <div id = "divNULL"></div>
+            <div id = "divId4">4</div>
+        </div>
+    </body>
+</httml>
